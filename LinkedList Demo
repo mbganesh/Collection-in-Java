@@ -1,0 +1,22 @@
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+
+
+class LinkedListDemo{
+    public static void main(String[] args) {
+        //LinkedList --> class
+        //List --> interface
+
+        List <String> link = new LinkedList<String>();
+        link.add("Abi");
+        link.add("Baskar");
+        link.add("Charli");
+
+        Iterator itr = link.iterator();
+        while(itr.hasNext()){
+            System.out.println(itr.next());
+        }
+
+    }
+}
