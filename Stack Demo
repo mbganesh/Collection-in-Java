@@ -1,0 +1,28 @@
+import java.util.Iterator;
+import java.util.Stack;
+
+/*
+The stack is the subclass of Vector.
+ It implements the last-in-first-out data structure, 
+    i.e., Stack. The stack contains all of the methods of Vector class and also provides its methods like boolean push(), boolean peek(), boolean push(object o),
+     which defines its properties.
+     */
+
+class StackDemo{
+    public static void main(String[] args) {
+        //Stack --> Class & implements List --> Interface
+
+        Stack<String> st_ob = new Stack<String>();
+
+        st_ob.add("India");
+        st_ob.add("TamilNadu");
+        st_ob.add("Tirunelveli");
+
+        Iterator itr = st_ob.iterator();
+
+        for (String str_Ob : st_ob) {
+            System.out.println(itr.next());
+            
+        }
+    }
+}     
