@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+
+class ArrayListDemo{
+    public static void main(String[] args) {
+        //creating a arraylist...
+        ArrayList <String> arlist = new ArrayList<String>();
+
+        // adding object in arraylist...
+        arlist.add("One");
+        arlist.add("Two");
+        arlist.add("Three");
+        arlist.add("Four");
+
+        // traversing list via Iterator...
+        Iterator it = arlist.iterator();
+
+        while(it.hasNext())
+        System.out.println(it.next());
+
+    }
+}
