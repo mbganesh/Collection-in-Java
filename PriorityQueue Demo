@@ -1,0 +1,41 @@
+import java.util.Iterator;
+import java.util.PriorityQueue;
+import java.util.Queue;
+
+/*
+Queue interface maintains the first-in-first-out order. 
+It can be defined as an ordered list that is used to hold the elements which are about to be processed. 
+There are various classes like PriorityQueue, Deque, and ArrayDeque which implements the Queue interface.
+*/
+
+//Queue Class Syntax....
+    
+ /*      Queue<String> q1 = new PriorityQueue();  
+        Queue<String> q2 = new ArrayDeque();        */
+
+class PriorityQueueDemo{
+    public static void main(String[] args) {
+        // PriorityQueue --> Class & implements Queue --> Interface
+
+        Queue<Character> prioQu = new PriorityQueue<Character>();
+
+        prioQu.add('J');
+        prioQu.add('A');
+        prioQu.add('V');
+        prioQu.add('A');
+
+        Iterator its = prioQu.iterator();
+        while(its.hasNext()){
+            System.out.println(its.next());
+        }
+        
+
+
+    }
+}
+        
+/*
+The PriorityQueue class implements the Queue interface.
+ It holds the elements or objects which are to be processed by their priorities. PriorityQueue doesn't allow null values to be stored in the queue.    */
+ 
+ 
