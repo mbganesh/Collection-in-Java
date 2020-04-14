@@ -1,0 +1,27 @@
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+
+/*
+LinkedHashSet class represents the LinkedList implementation of Set Interface.
+ It extends the HashSet class and implements Set interface.
+  Like HashSet, It also contains unique elements. 
+  It maintains the insertion order and permits null elements
+  */
+
+  class LinkedHashSet_Demo{
+      public static void main(String[] args) {
+          LinkedHashSet <String> linkedhashset = new LinkedHashSet<String>();
+
+          linkedhashset.add("New Technologys:");
+          linkedhashset.add("\n****************\n");
+          linkedhashset.add("Big Data");
+          linkedhashset.add("AI");
+          linkedhashset.add("IoT");
+
+          Iterator<String> display = linkedhashset.iterator();
+
+          while(display.hasNext()){
+              System.out.println(display.next());
+          }
+      }
+  }
