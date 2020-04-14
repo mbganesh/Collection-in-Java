@@ -1,0 +1,37 @@
+import java.util.Deque;
+import java.util.ArrayDeque;
+
+/*
+Deque Interface
+****************
+Deque interface extends the Queue interface.
+ In Deque, we can remove and add the elements from both the side.
+ Deque stands for a double-ended queue which enables us to perform the operations at both the ends.
+*/
+
+// Syntax:  ==>     Deque dq = new ArrayDeque();
+
+class ArrayDequeDemo{
+    public static void main(String[] args) {
+        Deque<String> deque = new ArrayDeque<String>();
+        deque.add("Hello ");
+        deque.add("World");
+        for (String que : deque) {
+            System.out.println(que);
+        }
+
+        System.out.println("Removing 1st Element:");
+        deque.poll();
+        for (String string : deque) {
+            System.out.println(string);
+        }
+
+        System.out.println("Removing 2nd Element:");
+        deque.remove();
+        for (String string : deque) {
+            
+           //   Nothing is Printed....
+            System.out.println(string);
+        }
+    }
+}
